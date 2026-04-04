@@ -34,7 +34,7 @@ jobs:
           echo "RELEASE_STORE_PASSWORD=${{ secrets.KEYSTORE_PASS }}" >> gradle.properties
           echo "ADDITIONAL_BUILD_NUMBER=1" >> gradle.properties
           sudo apt update
-          sudo apt -y install ninja-build meson
+          sudo apt -y install ninja-build meson gperf
           ./gradlew :TMessagesProj_App:assembleAfatRelease
 
       - uses: actions/upload-artifact@v4
