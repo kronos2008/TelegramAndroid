@@ -18,7 +18,7 @@ jobs:
 
       - uses: nttld/setup-ndk@v1.4.2
         with:
-          ndk-version: r21e
+          ndk-version: r26d
           link-to-sdk: true
 
       - name: Decode Keystore
